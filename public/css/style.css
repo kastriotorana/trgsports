@@ -39,6 +39,7 @@ body {
 }
 .nav-logo { text-decoration: none; color: var(--text); }
 .logo-svg { height: 36px; width: auto; }
+.logo-img { height: 36px; width: auto; filter: invert(1); }
 .nav-links { list-style: none; display: flex; gap: 32px; align-items: center; }
 .nav-links a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; transition: color .2s; }
 .nav-links a:hover { color: var(--text); }
@@ -309,7 +310,7 @@ input[type="color"] {
 /* ── Footer ───────────────────────────────── */
 .footer { background: var(--bg2); border-top: 1px solid var(--border); padding: 50px 24px; }
 .footer-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
-.footer-logo { height: 40px; width: auto; color: var(--muted); margin-bottom: 16px; }
+.footer-logo { height: 40px; width: auto; margin-bottom: 16px; filter: invert(1) opacity(0.5); }
 .footer p { color: var(--muted); font-size: 13px; margin-top: 6px; }
 
 /* ── Responsive ───────────────────────────── */
