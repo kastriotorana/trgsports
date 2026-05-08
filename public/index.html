@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRG Sports — Custom Jerseys</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <svg viewBox="0 0 200 70" class="logo-svg" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 12 C10 12, 2 22, 2 34 C2 42, 6 48, 14 50 C10 44, 10 36, 16 28 C20 22, 26 18, 34 16 Z" fill="currentColor"/>
+        <path d="M34 16 C44 14, 54 18, 58 28 C62 36, 58 46, 52 50 C60 48, 66 42, 66 34 C66 22, 58 12, 48 12 C42 12, 37 14, 34 16 Z" fill="currentColor"/>
+        <path d="M16 28 C20 22, 26 18, 34 16 C44 14, 54 18, 58 28 C52 24, 44 22, 36 24 C28 26, 20 32, 16 28 Z" fill="currentColor"/>
+        <text x="78" y="46" font-family="'Bebas Neue', sans-serif" font-size="42" fill="currentColor" letter-spacing="2">TRG</text>
+      </svg>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#sports">Sports</a></li>
+      <li><a href="#customize" class="btn-nav">Design Yours</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <p class="hero-tag">Professional Grade · 100% Custom</p>
+    <h1 class="hero-title">YOUR TEAM.<br/>YOUR JERSEY.</h1>
+    <p class="hero-sub">Upload your logo, choose your colors, add names & numbers — we manufacture and deliver in days.</p>
+    <a href="#customize" class="btn-primary">Start Designing</a>
+  </div>
+  <div class="hero-visual">
+    <div class="jersey-hero-preview">
+      <svg viewBox="0 0 220 260" xmlns="http://www.w3.org/2000/svg" class="hero-jersey">
+        <defs>
+          <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#1a1a2e"/>
+            <stop offset="100%" stop-color="#16213e"/>
+          </linearGradient>
+        </defs>
+        <!-- Jersey body -->
+        <path d="M60 30 L20 55 L35 90 L55 78 L55 230 L165 230 L165 78 L185 90 L200 55 L160 30 L145 15 C130 8, 90 8, 75 15 Z" fill="url(#hg)" stroke="#e94560" stroke-width="2"/>
+        <!-- Collar -->
+        <path d="M85 15 Q110 28 135 15 Q125 35 110 35 Q95 35 85 15 Z" fill="#e94560"/>
+        <!-- Sleeve stripes -->
+        <path d="M20 55 L35 90 L55 78 L55 68 L32 62 Z" fill="#e94560" opacity="0.6"/>
+        <path d="M200 55 L185 90 L165 78 L165 68 L188 62 Z" fill="#e94560" opacity="0.6"/>
+        <!-- Number -->
+        <text x="110" y="165" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="72" fill="#e94560" opacity="0.9">7</text>
+        <!-- Name bar -->
+        <rect x="65" y="90" width="90" height="22" rx="2" fill="#e94560" opacity="0.15"/>
+        <text x="110" y="106" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="14" fill="#ffffff" letter-spacing="3">PLAYER</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how-it-works">
+  <div class="container">
+    <h2 class="section-title">How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-icon">🎨</div>
+        <h3>Design</h3>
+        <p>Pick colors, upload your logo, add names and numbers using our live designer.</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-icon">📦</div>
+        <h3>Order</h3>
+        <p>Submit your order with sizes for each player. Minimum 5 jerseys.</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-icon">🚚</div>
+        <h3>Deliver</h3>
+        <p>Professional sublimation printed jerseys delivered to your door in 7-10 days.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPORTS -->
+<section class="section dark" id="sports">
+  <div class="container">
+    <h2 class="section-title">Available Sports</h2>
+    <div class="sports-grid">
+      <div class="sport-card" onclick="selectSport('football')">
+        <span class="sport-icon">⚽</span><span>Football</span>
+      </div>
+      <div class="sport-card" onclick="selectSport('basketball')">
+        <span class="sport-icon">🏀</span><span>Basketball</span>
+      </div>
+      <div class="sport-card" onclick="selectSport('volleyball')">
+        <span class="sport-icon">🏐</span><span>Volleyball</span>
+      </div>
+      <div class="sport-card" onclick="selectSport('hockey')">
+        <span class="sport-icon">🏒</span><span>Hockey</span>
+      </div>
+      <div class="sport-card" onclick="selectSport('rugby')">
+        <span class="sport-icon">🏉</span><span>Rugby</span>
+      </div>
+      <div class="sport-card" onclick="selectSport('esports')">
+        <span class="sport-icon">🎮</span><span>Esports</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CUSTOMIZER -->
+<section class="section" id="customize">
+  <div class="container wide">
+    <h2 class="section-title">Design Your Jersey</h2>
+    <div class="customizer">
+
+      <!-- PREVIEW -->
+      <div class="preview-panel">
+        <div class="preview-tabs">
+          <button class="tab active" onclick="switchView('front',this)">Front</button>
+          <button class="tab" onclick="switchView('back',this)">Back</button>
+        </div>
+        <div class="preview-canvas-wrap">
+          <canvas id="jerseyCanvas" width="380" height="480"></canvas>
+        </div>
+        <p class="preview-hint">Live preview updates as you design</p>
+      </div>
+
+      <!-- CONTROLS -->
+      <div class="controls-panel">
+
+        <!-- Sport selector -->
+        <div class="ctrl-group">
+          <label class="ctrl-label">Sport Type</label>
+          <select id="sportSelect" onchange="updatePreview()">
+            <option value="football">Football</option>
+            <option value="basketball">Basketball</option>
+            <option value="volleyball">Volleyball</option>
+            <option value="hockey">Hockey</option>
+            <option value="rugby">Rugby</option>
+            <option value="esports">Esports / Gaming</option>
+          </select>
+        </div>
+
+        <!-- Colors -->
+        <div class="ctrl-group">
+          <label class="ctrl-label">Jersey Colors</label>
+          <div class="color-row">
+            <div class="color-item">
+              <span>Primary</span>
+              <input type="color" id="colorPrimary" value="#1a1a2e" onchange="updatePreview()" />
+            </div>
+            <div class="color-item">
+              <span>Secondary</span>
+              <input type="color" id="colorSecondary" value="#e94560" onchange="updatePreview()" />
+            </div>
+            <div class="color-item">
+              <span>Text</span>
+              <input type="color" id="colorText" value="#ffffff" onchange="updatePreview()" />
+            </div>
+          </div>
+          <div class="preset-colors">
+            <span class="preset-label">Presets:</span>
+            <button class="preset" style="background:linear-gradient(135deg,#1a1a2e,#e94560)" onclick="applyPreset('#1a1a2e','#e94560','#ffffff')" title="Midnight Red"></button>
+            <button class="preset" style="background:linear-gradient(135deg,#003087,#ffffff)" onclick="applyPreset('#003087','#ffffff','#003087')" title="Royal Blue"></button>
+            <button class="preset" style="background:linear-gradient(135deg,#006400,#ffd700)" onclick="applyPreset('#006400','#ffd700','#ffffff')" title="Forest Gold"></button>
+            <button class="preset" style="background:linear-gradient(135deg,#1a1a1a,#c0c0c0)" onclick="applyPreset('#1a1a1a','#c0c0c0','#ffffff')" title="Black Silver"></button>
+            <button class="preset" style="background:linear-gradient(135deg,#8b0000,#ffffff)" onclick="applyPreset('#8b0000','#ffffff','#8b0000')" title="Crimson"></button>
+            <button class="preset" style="background:linear-gradient(135deg,#ff6600,#000000)" onclick="applyPreset('#ff6600','#000000','#ffffff')" title="Fire Black"></button>
+          </div>
+        </div>
+
+        <!-- Design Pattern -->
+        <div class="ctrl-group">
+          <label class="ctrl-label">Design Pattern</label>
+          <div class="pattern-grid">
+            <button class="pattern-btn active" data-pattern="solid" onclick="selectPattern('solid',this)">Solid</button>
+            <button class="pattern-btn" data-pattern="stripes" onclick="selectPattern('stripes',this)">Stripes</button>
+            <button class="pattern-btn" data-pattern="diagonal" onclick="selectPattern('diagonal',this)">Diagonal</button>
+            <button class="pattern-btn" data-pattern="gradient" onclick="selectPattern('gradient',this)">Gradient</button>
+            <button class="pattern-btn" data-pattern="split" onclick="selectPattern('split',this)">Split</button>
+            <button class="pattern-btn" data-pattern="panel" onclick="selectPattern('panel',this)">Panel</button>
+          </div>
+        </div>
+
+        <!-- Logo -->
+        <div class="ctrl-group">
+          <label class="ctrl-label">Team Logo</label>
+          <div class="upload-zone" id="uploadZone">
+            <div id="uploadPlaceholder">
+              <div class="upload-icon">⬆</div>
+              <p>Drop your logo here or <span class="upload-link" onclick="document.getElementById('logoFile').click()">browse</span></p>
+              <p class="upload-hint">PNG, SVG or JPG · Max 5MB</p>
+            </div>
+            <img id="logoPreview" style="display:none;max-height:80px;max-width:180px;object-fit:contain;" />
+            <button id="removeLogo" style="display:none;" class="btn-sm-ghost" onclick="removeLogo()">✕ Remove</button>
+          </div>
+          <input type="file" id="logoFile" accept="image/*" style="display:none" onchange="handleLogoUpload(event)" />
+          <div class="logo-pos-row" id="logoPosRow" style="display:none">
+            <label>Position:</label>
+            <select id="logoPosition" onchange="updatePreview()">
+              <option value="chest-left">Chest Left</option>
+              <option value="chest-center">Chest Center</option>
+              <option value="chest-right">Chest Right</option>
+              <option value="back-top">Back Top</option>
+            </select>
+            <label>Size:</label>
+            <input type="range" id="logoSize" min="30" max="120" value="60" oninput="updatePreview()" />
+          </div>
+        </div>
+
+        <!-- Name & Number (Front) -->
+        <div class="ctrl-group">
+          <label class="ctrl-label">Player Name & Number</label>
+          <div class="name-num-row">
+            <div class="input-wrap">
+              <label>Name</label>
+              <input type="text" id="playerName" placeholder="e.g. RODRIGUEZ" maxlength="14" oninput="updatePreview()" />
+            </div>
+            <div class="input-wrap short">
+              <label>Number</label>
+              <input type="text" id="playerNumber" placeholder="10" maxlength="2" oninput="updatePreview()" />
+            </div>
+          </div>
+          <div class="font-row">
+            <label>Font Style:</label>
+            <div class="font-options">
+              <button class="font-btn active" data-font="Bebas Neue" onclick="selectFont('Bebas Neue',this)">ATHLETIC</button>
+              <button class="font-btn" data-font="Arial Black" onclick="selectFont('Arial Black',this)">BOLD</button>
+              <button class="font-btn" data-font="Georgia" onclick="selectFont('Georgia',this)">Classic</button>
+              <button class="font-btn" data-font="Courier New" onclick="selectFont('Courier New',this)">MONO</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fabric -->
+        <div class="ctrl-group">
+          <label class="ctrl-label">Fabric & Fit</label>
+          <div class="radio-group">
+            <label class="radio-opt">
+              <input type="radio" name="fabric" value="dryfit" checked onchange="updateOrder()"/>
+              <span class="radio-box"></span>
+              <span>Dry-Fit (Recommended)</span>
+            </label>
+            <label class="radio-opt">
+              <input type="radio" name="fabric" value="mesh" onchange="updateOrder()" />
+              <span class="radio-box"></span>
+              <span>Mesh Breathable</span>
+            </label>
+            <label class="radio-opt">
+              <input type="radio" name="fabric" value="premium" onchange="updateOrder()" />
+              <span class="radio-box"></span>
+              <span>Premium Pro-Cut</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-summary" id="orderSummary">
+          <h3>Order Summary</h3>
+          <div class="summary-row"><span>Sport</span><span id="sumSport">Football</span></div>
+          <div class="summary-row"><span>Colors</span><span id="sumColors">Custom</span></div>
+          <div class="summary-row"><span>Fabric</span><span id="sumFabric">Dry-Fit</span></div>
+          <div class="summary-row"><span>Quantity</span>
+            <span><input type="number" id="quantity" min="5" value="10" style="width:60px" onchange="updateOrder()" /> jerseys</span>
+          </div>
+          <div class="summary-total">
+            <span>Estimated Total</span>
+            <span id="sumTotal" class="total-price">€290.00</span>
+          </div>
+          <button class="btn-primary full" onclick="openOrderModal()">Place Order →</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER MODAL -->
+<div class="modal-overlay" id="orderModal" style="display:none" onclick="closeModalOutside(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <h2>Complete Your Order</h2>
+    <p class="modal-sub">Fill in your details and we'll get in touch within 24 hours.</p>
+    <form id="orderForm" onsubmit="submitOrder(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Team / Club Name *</label>
+          <input type="text" id="teamName" required placeholder="FC Barcelona Academy" />
+        </div>
+        <div class="form-group">
+          <label>Contact Name *</label>
+          <input type="text" id="contactName" required placeholder="Your name" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Email *</label>
+          <input type="email" id="contactEmail" required placeholder="you@team.com" />
+        </div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="tel" id="contactPhone" placeholder="+383 44 000 000" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Size Breakdown (e.g. 2×S, 5×M, 3×L)</label>
+        <input type="text" id="sizes" placeholder="2×S, 5×M, 3×L, 2×XL" />
+      </div>
+      <div class="form-group">
+        <label>Additional Notes</label>
+        <textarea id="notes" rows="3" placeholder="Any specific requirements, deadlines, etc."></textarea>
+      </div>
+      <div id="formError" class="form-error" style="display:none"></div>
+      <button type="submit" class="btn-primary full" id="submitBtn">Submit Order</button>
+    </form>
+    <div id="orderSuccess" style="display:none" class="order-success">
+      <div class="success-icon">✓</div>
+      <h3>Order Received!</h3>
+      <p>We'll contact you within 24 hours to confirm details.</p>
+      <p id="orderIdDisplay" class="order-id"></p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <svg viewBox="0 0 200 70" class="footer-logo" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18 12 C10 12, 2 22, 2 34 C2 42, 6 48, 14 50 C10 44, 10 36, 16 28 C20 22, 26 18, 34 16 Z" fill="currentColor"/>
+      <path d="M34 16 C44 14, 54 18, 58 28 C62 36, 58 46, 52 50 C60 48, 66 42, 66 34 C66 22, 58 12, 48 12 C42 12, 37 14, 34 16 Z" fill="currentColor"/>
+      <path d="M16 28 C20 22, 26 18, 34 16 C44 14, 54 18, 58 28 C52 24, 44 22, 36 24 C28 26, 20 32, 16 28 Z" fill="currentColor"/>
+      <text x="78" y="46" font-family="'Bebas Neue', sans-serif" font-size="42" fill="currentColor" letter-spacing="2">TRG</text>
+    </svg>
+    <p>© 2026 TRG Sports. All rights reserved.</p>
+    <p>Professional custom jerseys for every sport.</p>
+  </div>
+</footer>
+
+<script src="/js/customizer.js"></script>
+</body>
+</html>
